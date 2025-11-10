@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srishti Kumbhare | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="main.css" />
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Inter:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+  <nav class="bg-white fixed top-0 left-0 w-full z-50 shadow-lg">
+    <div class="w-11/12 max-w-[1280px] mx-auto flex items-center justify-between py-4">
+      <a href="#intro" class="flex items-center gap-3">
+        <h1
+          class="font-['Poppins'] font-extrabold text-3xl sm:text-4xl text-gray-900 hover:text-rose-600 transition-all duration-300">
+          Srishti
+        </h1>
+      </a>
+
+      <button id="menu-toggle" class="lg:hidden text-gray-800 focus:outline-none">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path id="hamburger-top" class="transition-all duration-300" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M4 6h16"></path>
+          <path id="hamburger-middle" class="transition-all duration-300" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M4 12h16"></path>
+          <path id="hamburger-bottom" class="transition-all duration-300" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M4 18h16"></path>
+        </svg>
+      </button>
+
+      <ul id="nav-links"
+        class="hidden lg:flex lg:space-x-8 lg:items-center absolute lg:static top-16 left-0 w-full lg:w-auto bg-white lg:bg-transparent shadow-lg lg:shadow-none p-4 lg:p-0 transition-all duration-300 ease-in-out">
+        <li class="relative group">
+          <a href="#about"
+            class="text-gray-800 font-['Inter'] font-semibold text-base lg:text-lg py-2 hover:text-rose-600 transition-all duration-300 ease-out">
+            About
+          </a>
+          <div
+            class="absolute bottom-0 left-0 w-0 h-0.5 bg-rose-600 group-hover:w-full transition-all duration-300 ease-out">
+          </div>
+        </li>
+        <li class="relative group">
+          <a href="#skill"
+            class="text-gray-800 font-['Inter'] font-semibold text-base lg:text-lg py-2 hover:text-rose-600 transition-all duration-300 ease-out">
+            Skills
+          </a>
+          <div
+            class="absolute bottom-0 left-0 w-0 h-0.5 bg-rose-600 group-hover:w-full transition-all duration-300 ease-out">
+          </div>
+        </li>
+        <li class="relative group">
+          <a href="#project"
+            class="text-gray-800 font-['Inter'] font-semibold text-base lg:text-lg py-2 hover:text-rose-600 transition-all duration-300 ease-out">
+            Projects
+          </a>
+          <div
+            class="absolute bottom-0 left-0 w-0 h-0.5 bg-rose-600 group-hover:w-full transition-all duration-300 ease-out">
+          </div>
+        </li>
+        <li class="relative group">
+          <a href="#education"
+            class="text-gray-800 font-['Inter'] font-semibold text-base lg:text-lg py-2 hover:text-rose-600 transition-all duration-300 ease-out">
+            Education
+          </a>
+          <div
+            class="absolute bottom-0 left-0 w-0 h-0.5 bg-rose-600 group-hover:w-full transition-all duration-300 ease-out">
+          </div>
+        </li>
+        <li class="relative group">
+          <a href="#Certificates"
+            class="text-gray-800 font-['Inter'] font-semibold text-base lg:text-lg py-2 hover:text-rose-600 transition-all duration-300 ease-out">
+            Certificates
+          </a>
+          <div
+            class="absolute bottom-0 left-0 w-0 h-0.5 bg-rose-600 group-hover:w-full transition-all duration-300 ease-out">
+          </div>
+        </li>
+
+        <li class="lg:hidden mt-4">
+          <a href="#contact">
+            <button
+              class="w-full py-2.5 px-6 bg-gradient-to-r from-rose-500 to-rose-600 text-white font-['Inter'] font-semibold text-sm rounded-lg shadow-md hover:shadow-lg hover:from-rose-600 hover:to-rose-700 hover:-translate-y-1 transition-all duration-300 ease-out inline-flex items-center justify-center gap-2">
+              <i data-feather="send" class="w-4 h-4"></i>
+              Get in Touch
+            </button>
+          </a>
+        </li>
+      </ul>
+
+      <div class="hidden lg:flex items-center">
+        <a href="#contact">
+          <button
+            class="py-2.5 px-6 bg-gradient-to-r from-rose-500 to-rose-600 text-white font-['Inter'] font-semibold text-sm rounded-lg shadow-md hover:shadow-lg hover:from-rose-600 hover:to-rose-700 hover:-translate-y-1 transition-all duration-300 ease-out inline-flex items-center gap-2">
+            <i data-feather="send" class="w-4 h-4"></i>
+            Get in Touch
+          </button>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section
+  id="intro"
+  class="min-h-screen flex items-center bg-gradient-to-b from-rose-900 via-rose-300 to-rose-100 pt-20 pb-12 overflow-hidden"
+>
+  <div
+    class="w-11/12 max-w-[1200px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-12"
+  >
+    <div class="space-y-6 z-10 text-center lg:text-left">
+      <h1
+        class="font-['Poppins'] font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-[1.1] tracking-tighter text-gray-900"
+      >
+        <span class="block uppercase text-rose-600">Srishti</span>
+        <span class="block uppercase text-gray-800">Kumbhare</span>
+      </h1>
+      <div
+        class="w-16 h-1.5 bg-rose-500 rounded-full mx-auto lg:mx-0"
+      ></div>
+      <p
+        class="font-['Inter'] font-semibold text-base sm:text-lg lg:text-xl leading-7 text-gray-800 opacity-80 tracking-wide"
+      >
+        Web Developer | C/C++ Programmer | AIML Enthusiast
+      </p>
+      <div class="flex flex-col items-center lg:items-start space-y-6">
+        <div
+          class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4"
+        >
+          <a href="#about" class="w-full sm:w-auto">
+            <button
+              class="w-full sm:w-auto bg-rose-500 text-white rounded-lg font-['Inter'] font-semibold text-base sm:text-lg py-3 px-6 hover:bg-rose-600 hover:shadow-lg hover:-translate-y-1 hover:scale-105 transition-all duration-300 inline-flex items-center gap-2"
+            >
+              Explore
+              <i data-feather="arrow-down-right" class="w-5 h-5"></i>
+            </button>
+          </a>
+          <a href="#" target="_blank" class="w-full sm:w-auto">
+            <button
+              class="w-full sm:w-auto bg-white text-gray-800 font-['Inter'] font-bold text-base sm:text-lg py-3 px-6 rounded-lg inline-flex items-center hover:bg-gray-100 hover:scale-105 transition-all duration-300"
+            >
+              <svg
+                class="fill-current w-5 h-5 sm:w-6 sm:h-6 mr-3"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+              </svg>
+              <span>Resume</span>
+            </button>
+          </a>
+        </div>
+        <div class="flex space-x-4">
+          <a
+            href="https://www.linkedin.com/in/srishti-kumbhare-26ab142a9"
+            target="_blank"
+            class="w-12 h-12 flex items-center justify-center bg-rose-500 text-white rounded-lg hover:bg-rose-600 hover:shadow-lg hover:-translate-y-1 hover:scale-105 transition-all duration-300 ease-out"
+          >
+            <i data-feather="linkedin" class="w-6 h-6"></i>
+          </a>
+
+          <a
+            href="https://github.com/srishtikumbhare02"
+            target="_blank"
+            class="w-12 h-12 flex items-center justify-center bg-rose-500 text-white rounded-lg hover:bg-rose-600 hover:shadow-lg hover:-translate-y-1 hover:scale-105 transition-all duration-300 ease-out"
+          >
+            <i data-feather="github" class="w-6 h-6"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="relative z-10 w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] mt-8 lg:mt-0 flex justify-center items-center"
+    >
+      <!-- Code block thoda bada kar diya hai -->
+      <div
+        class="relative w-full h-72 sm:h-96 bg-gray-900 rounded-lg shadow-xl overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-rose-800 to-rose-600 opacity-20"
+        ></div>
+        <!-- Naya Code Snippet -->
+        <pre
+          class="font-mono text-green-300 text-sm p-4 whitespace-pre-wrap leading-relaxed"
+        >
+<code class="language-python">
+<span class="text-rose-300">class</span> <span class="text-yellow-300">Portfolio</span>:
+  <span class="text-rose-300">def</span> <span class="text-yellow-300">__init__</span>(<span class="text-white">self</span>, <span class="text-white">name</span>):
+    <span class="text-white">self.name</span> = <span class="text-green-400">f"{name}"</span>
+    <span class="text-white">self.title</span> = <span class="text-green-400">"Developer"</span>
+    <span class="text-white">self.skills</span> = [
+      <span class="text-green-400">"Python"</span>,
+      <span class="text-green-400">"C/C++"</span>,
+      <span class="text-green-400">"HTML/CSS"</span>,
+      <span class="text-green-400">"JavaScript"</span>
+    ]
+
+  <span class="text-rose-300">def</span> <span class="text-yellow-300">greet</span>(<span class="text-white">self</span>):
+    <span class="text-rose-300">print</span>(<span class="text-green-400">f"Welcome!"</span>)
+    <span class="text-rose-300">print</span>(<span class="text-green-400">f"You are viewing {self.name}'s page."</span>)
+
+
+<span class="text-white">me</span> = <span class="text-yellow-300">Portfolio</span>(<span class="text-green-400">"Srishti"</span>)
+<span class="text-white">me</span>.<span class="text-yellow-300">greet</span>()
+<span class="animate-blink">|</span></code>
+</pre>
+        <div
+          class="absolute bottom-4 right-4 text-gray-400 text-xs flex items-center"
+        >
+          <svg
+            class="w-4 h-4 mr-1"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 20l4-4m0 0l4-4m-4 4L10 4m6 16v-4m0 0H6"
+            ></path>
+          </svg>
+          Creative Coding
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="about" class="py-16 bg-gray-50" role="region" aria-label="About Me Section">
+    <div class="w-11/12 max-w-[1280px] mx-auto">
+      <h2
+        class="font-['Poppins'] font-black text-[2.5rem] md:text-[3.5rem] leading-[1.1] tracking-tighter text-gray-900 text-center mb-6">
+        <span class="block uppercase text-rose-600">About</span>
+        <span class="block uppercase">Me</span>
+      </h2>
+      <div class="w-12 h-1 bg-rose-600 mx-auto mb-10 rounded-full"></div>
+
+      <div
+        class="bg-rose-100 rounded-xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 border border-rose-300/70 shadow-md about-box"
+        role="region" aria-label="About Srishti Kumbhare">
+        <div class="flex-1 space-y-6">
+          <h3 class="font-['Inter'] font-semibold text-[1.75rem] text-gray-800 leading-tight">
+            Hi, I’m <span class="text-rose-600">Srishti Kumbhare</span>
+          </h3>
+          <p class="font-['Inter'] text-gray-700 text-[1.125rem] md:text-[1.125rem] text-[1rem] leading-7 opacity-90">
+            I’m a Second-year B.Tech student at
+            <span class="font-semibold">TIT Bhopal</span>, specializing in AIML.
+            My passion is Front End development, especially using
+            <span class="font-semibold">JavaScript</span> and Tailwind CSS to
+            build responsive web applications.
+          </p>
+          <p class="font-['Inter'] text-gray-700 text-[1.125rem] md:text-[1.125rem] text-[1rem] leading-7 opacity-90">
+            I'm also skilled in C/C++ and enjoy exploring new technologies.
+          </p>
+          <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
+            <a href="#contact"
+              class="bg-rose-600 text-white font-['Inter'] font-semibold text-[1rem] py-3 px-8 rounded-lg hover:bg-rose-700 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-out inline-flex items-center gap-2"
+              aria-label="Connect with Srishti Kumbhare">
+              <i data-feather="user-check" class="w-4 h-4"></i>
+              Connect with Me
+            </a>
+            <a href="#project"
+              class="secondary-button border-2 border-rose-600 text-rose-600 font-['Inter'] font-semibold text-[1rem] py-3 px-8 rounded-lg hover:shadow-lg inline-flex items-center gap-2"
+              aria-label="View Srishti Kumbhare's Projects">
+              <i data-feather="briefcase" class="w-4 h-4"></i>
+              View Projects
+            </a>
+          </div>
+        </div>
+
+        <div class="flex-1 relative flex justify-center items-center">
+          <div
+            class="relative w-full max-w-[400px] h-64 bg-gray-800 rounded-lg shadow-xl overflow-hidden flex justify-center items-center">
+            <div class="absolute inset-0 bg-gradient-to-br from-rose-800 to-rose-600 opacity-20"></div>
+            <svg class="absolute inset-0 w-full h-full text-rose-500 opacity-30" fill="none" viewBox="0 0 160 160">
+              <pattern id="pattern-grid" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+                <path d="M-1 10L10 -1M-1 0L10 11" stroke="currentColor" stroke-width="0.5" />
+              </pattern>
+              <rect width="100%" height="100%" fill="url(#pattern-grid)" />
+            </svg>
+            <div
+              class="absolute w-24 h-24 bg-rose-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"
+              style="top: 10%; left: 10%"></div>
+            <div
+              class="absolute w-32 h-32 bg-rose-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"
+              style="bottom: 15%; right: 15%"></div>
+            <div
+              class="absolute w-20 h-20 bg-rose-600 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"
+              style="top: 30%; right: 20%"></div>
+            <span class="relative z-10 font-['Poppins'] font-bold text-5xl text-white opacity-80">CODE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skill" class="py-16 bg-gray-50">
+    <div class="w-11/12 max-w-[1280px] mx-auto">
+      <h2
+        class="font-['Poppins'] font-black text-[2.5rem] md:text-[3.5rem] leading-[1.1] tracking-tighter text-gray-900 text-center mb-6">
+        <span class="block uppercase text-rose-600">My</span>
+        <span class="block uppercase">Skills</span>
+      </h2>
+      <div class="w-12 h-1 bg-rose-600 mx-auto mb-10 rounded-full"></div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+
+        <div
+          class="relative bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border-b-4 border-transparent hover:border-rose-500 skill-card"
+          style="--index: 1" role="region" aria-label="Programming Languages Skill">
+          <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="C++ Logo"
+            class="absolute right-3 top-3 w-10 h-10 rounded-full border border-gray-200 skill-icon" />
+          <div class="space-y-4">
+            <h3 class="font-['Inter'] font-semibold text-[1.375rem] text-gray-800">
+              Programming Languages
+            </h3>
+            <p class="font['Inter'] text-gray-600 text-[1rem]">
+              Strong foundation in C and C++ for problem-solving and core
+              programming.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="relative bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border-b-4 border-transparent hover:border-rose-500 skill-card"
+          style="--index: 2" role="region" aria-label="Web Development Skill">
+          <img src="https://img.icons8.com/color/48/000000/code.png" alt="Web Development Icon"
+            class="absolute right-3 top-3 w-10 h-10 rounded-full border border-gray-200 skill-icon" />
+          <div class="space-y-4">
+            <h3 class="font-['Inter'] font-semibold text-[1.375rem] text-gray-800">
+              Web Development
+            </h3>
+            <p class="font['Inter'] text-gray-600 text-[1rem]">
+              Experience in building responsive websites using HTML, CSS,
+              JavaScript, and Tailwind CSS.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="relative bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border-b-4 border-transparent hover:border-rose-500 skill-card"
+          style="--index: 3" role="region" aria-label="Additional Skills">
+          <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python Logo"
+            class="absolute right-3 top-3 w-10 h-10 rounded-full border border-gray-200 skill-icon" />
+          <div class="space-y-4">
+            <h3 class="font-['Inter'] font-semibold text-[1.375rem] text-gray-800">
+              Additional Skills
+            </h3>
+            <p class="font['Inter'] text-gray-600 text-[1rem]">
+              Familiarity with Python for scripting and a keen interest in AIML
+              concepts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="project" class="relative bg-gray-50 py-16">
+    <div class="w-11/12 max-w-[1280px] mx-auto">
+      <h2
+        class="font-['Poppins'] font-black text-[2.5rem] md:text-[3.5rem] leading-[1.1] tracking-tighter text-gray-900 text-center mb-12">
+        <span class="block uppercase text-rose-600">My</span>
+        <span class="block uppercase">Projects</span>
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <div
+          class="bg-gray-900 rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group relative h-96">
+          <img src="/photos/Project1.jpg" alt=" Srishti's Veg Food Hub(Online Food Ordering) Screenshot"
+            class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          <div
+            class="relative z-10 p-6 h-full flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/60 to-transparent">
+            <h3 class="font-['Inter'] font-semibold text-[1.5rem] text-white mb-2">
+              Srishti's Veg Food Hub(Online Food Ordering)
+            </h3>
+            <p class="font-['Inter'] text-gray-200 text-[1rem] leading-6 mb-4">
+              A front-end for a vegetarian food ordering website. Users can browse the menu and add items to an
+              interactive shopping cart.
+              Tech Stack: HTML, CSS, JavaScript
+            </p>
+            <div class="flex space-x-4 mb-6">
+              <img src="./photos/html.png" alt="HTML" class="w-10 h-10 object-contain" />
+              <img src="./photos/css.png" alt="CSS" class="w-10 h-10 object-contain" />
+              <img src="./photos/js.png" alt="JavaScript" class="w-10 h-10 object-contain" />
+            </div>
+
+            <a href="#" target="_blank"
+              class="relative bg-rose-600 text-white font-['Inter'] font-semibold text-sm py-2.5 px-6 rounded-lg overflow-hidden transition-all duration-300 ease-out group hover:bg-rose-700 hover:shadow-md inline-flex items-center gap-2 w-fit">
+              <i data-feather="github" class="w-4 h-4"></i>
+              <span class="relative">View Code</span>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="bg-gray-900 rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group relative h-96">
+          <img src="/photos/Project2.jpg" alt="Treasure Island Project Screenshot"
+            class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          <div
+            class="relative z-10 p-6 h-full flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/60 to-transparent">
+            <h3 class="font-['Inter'] font-semibold text-[1.5rem] text-white mb-2">
+              Treasure Island (Text Adventure)
+            </h3>
+            <p class="font-['Inter'] text-gray-200 text-[1rem] leading-6 mb-4">
+              A simple, interactive "Choose Your Own Adventure" game built entirely in Python. The player navigates a
+              story by making choices (like "left" or "right") entered into the console. The game uses conditional logic
+              (if/else statements) to determine the outcome, where wrong choices lead to a "Game Over."
+
+              Tech Stack: Python
+            </p>
+            <div class="flex space-x-4 mb-6">
+              <img src="./photos/python.png" alt="Python" class="w-10 h-10 object-contain" />
+            </div>
+
+            <a href="#" target="_blank"
+              class="relative bg-rose-600 text-white font-['Inter'] font-semibold text-sm py-2.5 px-6 rounded-lg overflow-hidden transition-all duration-300 ease-out group hover:bg-rose-700 hover:shadow-md inline-flex items-center gap-2 w-fit">
+              <i data-feather="github" class="w-4 h-4"></i>
+              <span class="relative">View Code</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="relative bg-gradient-to-b from-rose-50 to-gray-100 py-16 lg:py-20" role="region"
+    aria-label="Srishti Kumbhare's Education">
+    <div class="w-11/12 max-w-[1280px] xl:max-w-[1400px] mx-auto">
+      <h2
+        class="edu-element font-['Poppins'] font-black text-[2rem] md:text-[3rem] xl:text-[3.5rem] leading-[1.1] tracking-tighter text-gray-900 text-center mb-12"
+        style="--index: 1">
+        <span class="block uppercase text-rose-600">My</span>
+        <span class="block uppercase">Education</span>
+      </h2>
+
+      <div class="relative timeline space-y-10 lg:grid lg:grid-cols-2 lg:gap-8 lg:space-y-0">
+        <article class="edu-element edu-card relative bg-white rounded-xl shadow-md p-6 lg:p-8" style="--index: 2"
+          aria-label="B.Tech in Artificial Intelligence and Machine Learning">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-graduation-cap w-8 h-8 lg:w-10 lg:h-10 text-rose-600 mr-3 edu-icon" aria-hidden="true"></i>
+            <h3 class="font-['Inter'] font-semibold text-xl md:text-2xl text-gray-800">
+              B.Tech in AI & ML
+            </h3>
+          </div>
+          <p class="font-['Inter'] text-gray-600 text-base leading-6">
+            Technocrats Institute of Technology (TIT), Bhopal
+          </p>
+          <p class="font-['Inter'] text-gray-600 text-sm md:text-[0.95rem] leading-6 mt-2">
+            2023 - Present | 2nd Year (4th Semester)
+          </p>
+        </article>
+
+        <article class="edu-element edu-card relative bg-white rounded-xl shadow-md p-6 lg:p-8" style="--index: 3"
+          aria-label="Higher Secondary Education">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-book w-8 h-8 lg:w-10 lg:h-10 text-rose-600 mr-3 edu-icon" aria-hidden="true"></i>
+            <h3 class="font-['Inter'] font-semibold text-xl md:text-2xl text-gray-800">
+              Higher Secondary Education
+            </h3>
+          </div>
+          <p class="font-['Inter'] text-gray-600 text-base leading-6">
+            Govt. Girls High Secondry School
+          </p>
+          <p class="font-['Inter'] text-gray-600 text-sm md:text-[0.95rem] leading-6 mt-2">
+            2021 - 2023
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="Certificates" class="relative bg-white py-16">
+    <div class="w-11/12 max-w-[1280px] mx-auto">
+      <h2
+        class="font-['Poppins'] font-black text-[2.5rem] md:text-[3.5rem] leading-[1.1] tracking-tighter text-gray-900 text-center mb-12">
+        <span class="block uppercase text-rose-600">My</span>
+        <span class="block uppercase">Certificates</span>
+      </h2>
+
+      <div class="space-y-10">
+        <div
+          class="bg-gray-50 rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+          <div class="flex items-center justify-between flex-col sm:flex-row gap-6">
+            <div class="flex items-center space-x-4">
+              <img src="./photos/OracleLogo.png" alt="Coursera Logo" class="w-12 h-12 object-contain" />
+              <div>
+                <h3 class="font-['Inter'] font-semibold text-[1.25rem] text-gray-800">
+                  Oracle Generative Ai 
+                </h3>
+                <p class="font-['Inter'] text-gray-600 text-[0.95rem] mt-1">
+                  Issued by Oracle
+                </p>
+              </div>
+            </div>
+            <a href="./photos/oracle certificate.pdf" target="_blank"
+              class="bg-rose-600 text-white font-['Inter'] font-semibold text-sm py-2 px-5 rounded-lg hover:bg-rose-700 transition-all duration-300 ease-out">
+              View Certificate
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="bg-gray-50 rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+          <div class="flex items-center justify-between flex-col sm:flex-row gap-6">
+            <div class="flex items-center space-x-4">
+              <img src="./photos/coding.png" alt="Logo" class="w-12 h-12 object-contain" />
+              <div>
+                <h3 class="font-['Inter'] font-semibold text-[1.25rem] text-gray-800">
+                  TIT Hackathon Certificate
+                </h3>
+                <p class="font-['Inter'] text-gray-600 text-[0.95rem] mt-1">
+                Hackathon Certificate
+                </p>
+              </div>
+            </div>
+            <a href="./photos/HackathonCertificate.jpg" target="_blank"
+              class="bg-rose-600 text-white font-['Inter'] font-semibold text-sm py-2 px-5 rounded-lg hover:bg-rose-700 transition-all duration-300 ease-out">
+              View Certificate
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+  id="contact"
+  class="bg-gradient-to-b from-rose-100 via-rose-300 to-rose-900 pt-24 sm:pt-28 pb-12 sm:pb-16 overflow-hidden"
+>
+  <div class="w-11/11 max-w-[1280px] mx-auto">
+    <h2
+      class="font-['Poppins'] font-black text-[2.5rem] md:text-[3.5rem] leading-[1.1] tracking-tighter text-gray-900 text-center mb-6"
+    >
+      <span class="block uppercase text-rose-600">Get in</span>
+      <span class="block uppercase">Touch</span>
+    </h2>
+    <div class="w-12 h-1 bg-rose-600 mx-auto mb-10 rounded-full"></div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      
+      <!-- REAL FORM -->
+      <div class="bg-white rounded-xl p-8 shadow-md">
+        <h3 class="font-['Inter'] font-semibold text-2xl text-gray-800 mb-6">
+            Send Me a Message
+        </h3>
+        
+        <form data-netlify="true" name="contact" method="POST">
+          <div class="space-y-4">
+            <div>
+              <label for="name" class="font-['Inter'] font-medium text-gray-700">Full Name</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                class="w-full mt-2 p-3 bg-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500"
+                required
+              />
+            </div>
+            <div>
+              <label for="email" class="font-['Inter'] font-medium text-gray-700">Email Address</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                class="w-full mt-2 p-3 bg-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500"
+                required
+              />
+            </div>
+            <div>
+              <label for="message" class="font-['Inter'] font-medium text-gray-700">Message</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                rows="5"
+                class="w-full mt-2 p-3 bg-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="w-full py-3 px-6 bg-gradient-to-r from-rose-500 to-rose-600 text-white font-['Inter'] font-semibold rounded-lg shadow-md hover:shadow-lg hover:from-rose-600 hover:to-rose-700 hover:-translate-y-1 transition-all duration-300 ease-out inline-flex items-center justify-center gap-2"
+              >
+                <i data-feather="send" class="w-4 h-4"></i>
+                Send Message
+              </button>
+            </div>
+          </div>
+        </form>
+        
+        <!-- YEH RAHI FALLBACK LINE -->
+        <p class="mt-4 text-gray-600 font-['Inter'] text-sm text-center">
+          If the form doesn't work, please email me directly at
+          <a
+            href="mailto:srishti.k@example.com"
+            class="text-rose-600 hover:underline"
+            >srishtikumbhare79@gmail.com</a
+          >.
+        </p>
+        <!-- YAHAN TAK -->
+
+      </div>
+
+      <!-- Contact Info -->
+      <div class="space-y-8">
+        <div class="bg-white rounded-xl p-8 shadow-md">
+          <h3
+            class="font-['Inter'] font-semibold text-[1.75rem] text-gray-800 mb-6"
+          >
+            Contact Information
+          </h3>
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <i
+                data-feather="mail"
+                class="w-6 h-6 text-rose-600 mr-3"
+              ></i>
+              <p class="font-['Inter'] text-gray-700 text-[1rem]">
+                srishtikumbhare79@gmail.com
+              </p>
+            </div>
+            <div class="flex items-center">
+              <i
+                data-feather="phone"
+                class="w-6 h-6 text-rose-600 mr-3"
+              ></i>
+              <p class="font-['Inter'] text-gray-700 text-[1rem]">
+                +91-8839110129
+              </p>
+            </div>
+            <div class="flex items-center">
+              <i
+                data-feather="map-pin"
+                class="w-6 h-6 text-rose-600 mr-3"
+              ></i>
+              <p class="font-['Inter'] text-gray-700 text-[1rem]">
+                Bhopal, India
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex space-x-4">
+          <a
+            href="https://www.linkedin.com/in/srishti-kumbhare-26ab142a9"
+            target="_blank"
+            class="w-12 h-12 flex items-center justify-center bg-rose-500 text-white rounded-lg hover:bg-rose-600 hover:shadow-lg hover:-translate-y-1 hover:scale-105 transition-all duration-300 ease-out"
+          >
+            <i data-feather="linkedin" class="w-6 h-6"></i>
+          </a>
+         
+          <a
+            href="https://github.com/srishtikumbhare02"
+            target="_blank"
+            class="w-12 h-12 flex items-center justify-center bg-rose-500 text-white rounded-lg hover:bg-rose-600 hover:shadow-lg hover:-translate-y-1 hover:scale-105 transition-all duration-300 ease-out"
+          >
+            <i data-feather="github" class="w-6 h-6"></i>
+          </a>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer class="bg-rose-900 py-6">
+    <div class="max-w-[1280px] mx-auto text-center">
+      <div class="flex items-center justify-center mb-2">
+        <i data-feather="code" class="w-6 h-6 text-rose-600 mr-2"></i>
+        <p class="font-['Inter'] text-white text-[1rem]">
+          Website made by
+          <a href="#" target="_blank" class="footer-link text-rose-600 font-semibold">Srishti</a>
+        </p>
+      </div>
+      <p class="font-['Inter'] text-gray-400 text-sm">
+        &copy; 2025 Srishti Kumbhare. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>

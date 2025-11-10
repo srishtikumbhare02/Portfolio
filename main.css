@@ -1,0 +1,58 @@
+/* Page par smooth scrolling ke liye */
+html {
+  scroll-behavior: smooth;
+}
+/* Add to your main.css or Tailwind config if not already defined */
+
+/* Typing animation for code snippet */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-typing {
+  overflow: hidden; /* Ensures the text is hidden until typed */
+  white-space: pre-wrap; /* Keeps whitespace and line breaks */
+  animation: typing 4s steps(60, end) forwards; /* Adjust steps based on text length */
+}
+
+/* Blob animation for about section */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Contact form ke iframe ko full width dene ke liye */
+.form-iframe {
+  width: 100%;
+  min-height: 400px; /* Aap height adjust kar sakte hain */
+  border: none;
+}
+
+/* Aap yahaan aur custom styles add kar sakte hain */
